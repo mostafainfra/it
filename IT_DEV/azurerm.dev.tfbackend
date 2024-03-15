@@ -1,0 +1,4 @@
+resource_group_name  = "jesa_rg_tf_state_sentinel"
+storage_account_name = "jesasatfstatesentinel"
+container_name       = "jesasctfstatesentinel"
+key                  = "it_dev.terraform.tfstate"
