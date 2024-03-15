@@ -24,7 +24,7 @@ allow_gateway_transit_hub_to_spoke        = true
 allow_virtual_network_access_hub_to_spoke = true
 use_remote_gateways_hub_to_spoke          = false
 
-spoke_to_hub_peering_name                 = "peer-it-dev-euw-01"
+spoke_to_hub_peering_name                 = "peer-it-dev-euw-01M"
 allow_forwarded_traffic_spoke_to_hub      = true
 allow_gateway_transit_spoke_to_hub        = false
 allow_virtual_network_access_spoke_to_hub = true
