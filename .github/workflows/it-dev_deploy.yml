@@ -1,21 +1,21 @@
-name: IT Department Dev Environment Resources Provisioning
+name: IT Department main Environment Resources Provisioning
 
 on:
   push:
     branches:
-      - dev
+      - main
     paths:
-      - "IaC/IT/IT_DEV/*"
-      - ".github/workflows/it-dev_deploy.yml"
+      -".github/workflows/it-dev_deploy.yml"
+      
 
 jobs:
   provision_it_dev_resources:
-    name: "Provision IT Department Dev Environment In Dev Environment"
+    name: "Provision IT Department main Environment In Dev Environment"
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
-        working-directory: "./IaC/IT/IT_DEV"
+
     env:
       ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
