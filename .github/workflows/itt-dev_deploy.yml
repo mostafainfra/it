@@ -7,7 +7,6 @@ on:
     paths:
       -".github/workflows/it-dev_deploy.yml"
       
-
 jobs:
   provision_it_dev_resources:
     name: "Provision IT Department main Environment In Dev Environment"
